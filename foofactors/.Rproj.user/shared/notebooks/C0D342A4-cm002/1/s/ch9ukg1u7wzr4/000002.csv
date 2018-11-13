@@ -1,0 +1,8 @@
+"0","```r
+fruit_df <- tibble(
+  fruit1 = fruit[1:4],
+  fruit2 = fruit[5:8]
+)
+fruit_df %>% 
+  unite(\"flavor_combo\", fruit1, fruit2, sep = \" & \")
+```"

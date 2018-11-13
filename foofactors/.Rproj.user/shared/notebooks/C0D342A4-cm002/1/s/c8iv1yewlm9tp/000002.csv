@@ -1,0 +1,10 @@
+"0","```r
+str_subset(countries, pattern = \"i.a\")
+```"
+"1"," [1] \"Argentina\"                \"Bosnia and Herzegovina\"   \"Burkina Faso\"            
+ [4] \"Central African Republic\" \"China\"                    \"Costa Rica\"              
+ [7] \"Dominican Republic\"       \"Hong Kong, China\"         \"Jamaica\"                 
+[10] \"Mauritania\"               \"Nicaragua\"                \"South Africa\"            
+[13] \"Swaziland\"                \"Taiwan\"                   \"Thailand\"                
+[16] \"Trinidad and Tobago\"     
+"

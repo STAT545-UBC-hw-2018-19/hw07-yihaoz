@@ -1,0 +1,4 @@
+"0","```r
+c(\"bear\", \"beer\", \"bar\") %>% 
+    str_view_all_match(pattern = \"be(e|a)r\")
+```"

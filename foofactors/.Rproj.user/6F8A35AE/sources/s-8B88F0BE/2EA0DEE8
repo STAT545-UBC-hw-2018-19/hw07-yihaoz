@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542051398471.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "749852369",
+    "id" : "2EA0DEE8",
+    "lastKnownWriteTime" : 1480315310,
+    "last_content_update" : 1480315310,
+    "path" : "~/study/stat545/assignment7/foofactors/R/fbind.R",
+    "project_path" : "R/fbind.R",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

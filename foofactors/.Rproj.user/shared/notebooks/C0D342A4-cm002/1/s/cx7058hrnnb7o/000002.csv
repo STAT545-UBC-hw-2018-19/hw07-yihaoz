@@ -1,0 +1,6 @@
+"0","```r
+str_view_all_match <- function(countries, pattern) {
+    str_view_all(countries, pattern, match=TRUE)
+}
+str_view_all_match(countries, pattern = \"i.a\")
+```"

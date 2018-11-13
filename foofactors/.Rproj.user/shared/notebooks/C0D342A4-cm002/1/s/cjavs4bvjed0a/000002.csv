@@ -1,0 +1,7 @@
+"0","```r
+(files <- str_c(folders, \"/Readme.md\"))
+```"
+"1"," [1] \"/cm101/Readme.md\" \"/cm102/Readme.md\" \"/cm103/Readme.md\" \"/cm104/Readme.md\"
+ [5] \"/cm105/Readme.md\" \"/cm106/Readme.md\" \"/cm107/Readme.md\" \"/cm108/Readme.md\"
+ [9] \"/cm109/Readme.md\" \"/cm110/Readme.md\" \"/cm111/Readme.md\" \"/cm112/Readme.md\"
+"

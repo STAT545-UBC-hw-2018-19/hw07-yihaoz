@@ -1,0 +1,5 @@
+"0","```r
+#countries %>% 
+#    str_to_lower() %>% 
+#    str_view_all_match(\"YOUR_REGEX_HERE\")
+```"

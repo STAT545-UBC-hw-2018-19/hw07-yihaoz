@@ -1,0 +1,5 @@
+"0","```r
+test_that(\"folder names are length 6.\", {
+    expect_true(all(str_length(folders) == 6))
+})
+```"

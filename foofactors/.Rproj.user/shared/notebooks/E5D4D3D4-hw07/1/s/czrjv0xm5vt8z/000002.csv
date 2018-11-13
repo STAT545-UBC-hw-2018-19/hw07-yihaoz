@@ -1,0 +1,6 @@
+"0","read_df <- df_read(""gapminder_test.txt"")"
+"0","is.data.frame(read_df)"
+"1","[1]"
+"1"," TRUE"
+"1","
+"

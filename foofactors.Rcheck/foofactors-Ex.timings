@@ -1,0 +1,4 @@
+name	user	system	elapsed
+fbind	0.002	0.001	0.004	
+fdetect	0.001	0.000	0.001	
+freq_out	0.487	0.025	0.523	

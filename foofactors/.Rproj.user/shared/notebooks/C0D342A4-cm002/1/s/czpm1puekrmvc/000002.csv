@@ -1,0 +1,12 @@
+"0","```r
+fruit %>% head
+```"
+"1","[1] \"apple\"       \"apricot\"     \"avocado\"     \"banana\"      \"bell pepper\" \"bilberry\"   
+"
+"0","```r
+fruit %>% 
+    str_pad(width=7, side=\"right\", pad=\"$\") %>% 
+    head()
+```"
+"1","[1] \"apple$$\"     \"apricot\"     \"avocado\"     \"banana$\"     \"bell pepper\" \"bilberry\"   
+"

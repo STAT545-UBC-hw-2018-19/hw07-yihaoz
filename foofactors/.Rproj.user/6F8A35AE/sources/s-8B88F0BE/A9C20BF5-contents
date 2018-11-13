@@ -1,0 +1,32 @@
+---
+title: "hw07"
+output: github_document
+---
+
+```{r}
+suppressPackageStartupMessages(library(gapminder))
+suppressPackageStartupMessages(library(tidyverse))
+library(foofactors)
+```
+
+
+```{r}
+gapminder_reordered <- gapminder %>%
+  mutate(continent = fct_reorder(continent, lifeExp, sd)) %>%
+  arrange(continent)
+```
+
+```{r}
+df_write(gapminder_reordered, "gapminder_test.txt")
+levels(gapminder_reordered$continent)
+```
+
+```{r}
+read_df <- df_read("gapminder_test.txt")
+is.data.frame(read_df)
+```
+
+```{r}
+levels(read_df$continent)
+```
+

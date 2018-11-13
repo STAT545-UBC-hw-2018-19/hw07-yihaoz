@@ -1,0 +1,6 @@
+"0","```r
+fox %>% 
+    str_replace(pattern = \"fox\", replacement = \"giraffe\")
+```"
+"1","[1] \"The quick giraffe jumped on the sleeping cat.\"
+"

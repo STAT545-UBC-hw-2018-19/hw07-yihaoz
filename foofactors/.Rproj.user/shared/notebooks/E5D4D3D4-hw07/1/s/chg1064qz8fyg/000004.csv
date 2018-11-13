@@ -1,0 +1,3 @@
+"0","gapminder_reordered <- gapminder %>%"
+"0","  mutate(continent = fct_reorder(continent, lifeExp, sd)) %>%"
+"0","  arrange(continent)"

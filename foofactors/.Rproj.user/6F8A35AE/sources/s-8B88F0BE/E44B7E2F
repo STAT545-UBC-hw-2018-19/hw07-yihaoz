@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542073519147.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E44B7E2F",
+    "lastKnownWriteTime" : 1542075451,
+    "last_content_update" : 1542075451042,
+    "path" : "~/study/stat545/assignment7/foofactors/vignettes/hello-foofactors.Rmd",
+    "project_path" : "vignettes/hello-foofactors.Rmd",
+    "properties" : {
+        "cursorPosition" : "8,7",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

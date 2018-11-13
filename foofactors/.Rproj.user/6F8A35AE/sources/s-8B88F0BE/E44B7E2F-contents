@@ -1,0 +1,102 @@
+---
+title: "stringsAsFactors = HELLNO"
+author: "Yihao Zhang"
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::html_vignette:
+    toc: true
+vignette: >
+  %\VignetteIndexEntry{stringsAsFactors = HELLNO}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Factors are a very useful type of variable in R, but they can also drive you nuts. Especially the "stealth factor" that you think of as character.
+
+
+## Binding two factors via `fbind()`:
+
+```{r}
+library(foofactors)
+a <- factor(c("character", "hits", "your", "eyeballs"))
+b <- factor(c("but", "integer", "where it", "counts"))
+```
+
+Simply catenating two factors leads to a result that most don't expect.
+
+```{r}
+c(a, b)
+```
+
+The `fbind()` function glues two factors together and returns factor.
+
+```{r}
+fbind(a, b)
+```
+
+Often we want a table of frequencies for the levels of a factor. The base `table()` function returns an object of class `table`, which can be inconvenient for downstream work.  Processing with `as.data.frame()` can be helpful but it's a bit clunky.
+
+```{r}
+set.seed(1234)
+x <- factor(sample(letters[1:5], size = 100, replace = TRUE))
+table(x)
+as.data.frame(table(x))
+```
+
+## The `freq_out()` function returns a frequency table as a well-named `tbl_df`:
+
+```{r}
+freq_out(x)
+```
+
+
+## Using `fdetect()` to detect factor that should be character
+
+```{r}
+# For a non-character factor, it returns FALSE:
+fdetect(factor(c("a", "b", "c","c")))
+
+# For a character factor, it returns `TRUE`:
+fdetect(factor(c("a", "b","c","d")))
+```
+
+## Use `freorder()` to reorder the factor
+
+```{r}
+test_factor <- factor(c("a", "b", "c"))
+
+# Before freorder
+levels(test_factor)
+
+# After freorder
+levels(freorder(test_factor))
+```
+
+## Use `fset()` to set levels to the order in which they appear in the data
+
+```{r}
+test_factor <- factor(c("a", "b", "c"))
+fset(test_factor)
+```
+
+## Use `df_write()` and `df_read()` to write and read data frames to plain text delimited files while retaining factor levels
+
+```{r}
+library(gapminder)
+library(tidyverse)
+# First reorder the levels to be non-alphabetical for later comparison
+gapminder_reordered <- gapminder %>%
+  mutate(continent = fct_reorder(continent, lifeExp, sd)) %>%
+  arrange(continent)
+levels(gapminder_reordered$continent)
+```
+
+```{r}
+# Use df_write() to write the data frame into txt
+df_write(gapminder_reordered, "sample.txt")
+
+# use df_read() to read from the txt file
+res_df <- df_read("sample.txt")
+levels(res_df$continent)
+file.remove("sample.txt")
+```

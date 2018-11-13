@@ -1,0 +1,6 @@
+fbind                   Bind two factors
+fcheck                  Detect factors that should be character or not
+fdetect                 Detect factors that should be character
+foofactors              foofactors: Make factors less annoying
+freorder                Reorder factor
+freq_out                Make a frequency table for a factor
