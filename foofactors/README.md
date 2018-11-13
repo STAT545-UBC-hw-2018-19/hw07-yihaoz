@@ -12,13 +12,12 @@ please see [forcats](https://cran.r-project.org/package=forcats).**
 Factors are a very useful type of variable in R, but they can also drive
 you nuts. This package provides some helper functions for the care and
 feeding of factors. The package was originally created by Jenny Brian
-and can be accessed from
-[here](https://github.com/jennybc/foofactors).
+and can be accessed from [here](https://github.com/jennybc/foofactors).
 
 ### Installation
 
 ``` r
-#devtools::install_github("https://github.com/STAT545-UBC-students/hw07-yihaoz/foofactor")
+devtools::install_github("STAT545-UBC-students/hw07-yihaoz/foofactors")
 ```
 
 ### Quick demo
@@ -146,14 +145,14 @@ library(gapminder)
 library(tidyverse)
 ```
 
-    ## ── Attaching packages ─────────────────────────────────────────────────────── tidyverse 1.2.1 ──
+    ## ── Attaching packages ──────────────────────────────────────────────── tidyverse 1.2.1 ──
 
     ## ✔ ggplot2 3.0.0     ✔ purrr   0.2.5
     ## ✔ tibble  1.4.2     ✔ dplyr   0.7.6
     ## ✔ tidyr   0.8.1     ✔ stringr 1.3.1
     ## ✔ readr   1.1.1     ✔ forcats 0.3.0
 
-    ## ── Conflicts ────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+    ## ── Conflicts ─────────────────────────────────────────────────── tidyverse_conflicts() ──
     ## ✖ dplyr::filter() masks stats::filter()
     ## ✖ dplyr::lag()    masks stats::lag()
 
