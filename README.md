@@ -1,5 +1,4 @@
 # hw07-yihaoz
-# hw07-yihaoz
 
 In this homework developing Jenny’s foofactors package is required. The homework requirements can be found [here](http://stat545.com/Classroom/assignments/hw07/hw07.html)
 
